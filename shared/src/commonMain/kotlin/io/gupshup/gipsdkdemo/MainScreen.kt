@@ -32,7 +32,7 @@ fun MainScreen(modifier: Modifier) {
     ) {
 
         Text(
-            text = "GipSDK Demo",
+            text = "GipKit Demo",
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(20.dp),
