@@ -1,8 +1,9 @@
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.Button
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
-import androidx.compose.material.TextField
+import androidx.compose.material3.Button
+import androidx.compose.material3.ElevatedButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.runtime.Composable
@@ -13,6 +14,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import io.gupshup.gipsdkdemo.getPlatform
 
 @Composable
 fun MainScreen(modifier: Modifier) {
@@ -21,7 +23,7 @@ fun MainScreen(modifier: Modifier) {
     var userId by remember { mutableStateOf("Test-User-Id-1234") }
     val initialized by remember { mutableStateOf(false) }
 //    val gipChat = remember { getGipChat() }
-    
+    val title = remember { getPlatform().title }
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -32,12 +34,12 @@ fun MainScreen(modifier: Modifier) {
     ) {
 
         Text(
-            text = "GipKit Demo",
+            text = title,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(20.dp),
             textAlign = TextAlign.Center,
-            style = MaterialTheme.typography.caption
+            style = MaterialTheme.typography.headlineLarge
         )
 
         Spacer(modifier = Modifier.weight(0.5f))
@@ -69,7 +71,7 @@ fun MainScreen(modifier: Modifier) {
             label = { Text("User ID") }
         )
 
-        Button(onClick = {
+        ElevatedButton(onClick = {
 //            gipChat.initialize()
 //            GipChat.setAppId(appId)
 //            GipChat.setUserName(userName)
@@ -84,7 +86,7 @@ fun MainScreen(modifier: Modifier) {
         }
 
         Spacer(modifier = Modifier.weight(1f))
-        Button(
+        ElevatedButton(
             onClick = { /*GipChat.show()*/ },
             enabled = initialized
         ) {
