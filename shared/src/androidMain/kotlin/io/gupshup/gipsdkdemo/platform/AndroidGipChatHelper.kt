@@ -1,27 +1,30 @@
 package io.gupshup.gipsdkdemo.platform
 
+import android.content.Context
+import io.gupshup.gipchat.GipChat
 import io.gupshup.gipsdkdemo.getPlatform
 
-class AndroidGipChatHelper: GipChatHelper {
+class AndroidGipChatHelper(private val context: Context): GipChatHelper {
 
+    private val gipChat = GipChat
     override fun setAppId(appId: String) {
-        TODO("Not yet implemented")
+        gipChat.setAppId(appId)
     }
 
     override fun setUserName(userName: String) {
-        TODO("Not yet implemented")
+        gipChat.setUserName(userName)
     }
 
     override fun setUserId(userId: String) {
-        TODO("Not yet implemented")
+        gipChat.setUserId(userId)
     }
 
     override fun initialize(initialized: (Boolean) -> Unit) {
-        TODO("Not yet implemented")
+        gipChat.initialize(context = context, initialized = initialized)
     }
 
     override fun show() {
-        TODO("Not yet implemented")
+        gipChat.show()
     }
 
 
