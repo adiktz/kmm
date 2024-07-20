@@ -18,9 +18,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import io.gupshup.gipsdkdemo.getPlatform
+import io.gupshup.gipsdkdemo.platform.GipChatHelper
+import org.koin.compose.koinInject
 
 @Composable
-fun MainScreen(modifier: Modifier) {
+fun MainScreen(modifier: Modifier,
+               gipChatHelper: GipChatHelper = koinInject()
+) {
     var appId by remember { mutableStateOf("c5453fbf-95e6-4330-9e14-28a85d3ea6a5") }
     var userName by remember { mutableStateOf("Gaurav") }
     var userId by remember { mutableStateOf("Test-User-Id-1234") }
@@ -75,6 +79,7 @@ fun MainScreen(modifier: Modifier) {
         )
 
         ElevatedButton(onClick = {
+            gipChatHelper.initialize()
 //            gipChat.initialize()
 //            GipChat.setAppId(appId)
 //            GipChat.setUserName(userName)

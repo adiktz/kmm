@@ -1,8 +1,15 @@
 import SwiftUI
+import shared
 
 @main
 struct iOSApp: App {
-	var body: some Scene {
+    init() {
+		KoinInit_iosKt.doInitKoinIos(
+            appComponent: IosApplicationComponent(gipChatHelper: IosGipChatHelper())
+        )
+    }
+
+    var body: some Scene {
 		WindowGroup {
 			ContentView()
 		}

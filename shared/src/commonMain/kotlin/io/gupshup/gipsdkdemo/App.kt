@@ -19,33 +19,38 @@ import androidx.compose.ui.unit.dp
 import gipsdkdemo.shared.generated.resources.Res
 import gipsdkdemo.shared.generated.resources.compose_multiplatform
 import io.gupshup.gipsdkdemo.Greeting
+import io.gupshup.gipsdkdemo.platform.GipChatHelper
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
+import org.koin.compose.KoinContext
+import org.koin.compose.koinInject
 
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
-        var showContent by remember { mutableStateOf(false) }
-        val state = rememberScrollState()
-        
-        Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-            ElevatedButton(
-                modifier = Modifier.padding(20.dp),
-                onClick = { showContent = !showContent }
-            ) {
-                Text("Click me!")
-            }
-            AnimatedVisibility(!showContent) {
-                DefaultKMMView()
-            }
-            AnimatedVisibility(showContent) {
-                
-                Column(
-                    Modifier.fillMaxWidth(),
-                    horizontalAlignment = Alignment.CenterHorizontally
+    KoinContext {
+        MaterialTheme {
+            var showContent by remember { mutableStateOf(false) }
+            val state = rememberScrollState()
+            
+            Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+                ElevatedButton(
+                    modifier = Modifier.padding(20.dp),
+                    onClick = { showContent = !showContent }
                 ) {
-                    MainScreen(modifier = Modifier)
+                    Text("Click me!")
+                }
+                AnimatedVisibility(!showContent) {
+                    DefaultKMMView()
+                }
+                AnimatedVisibility(showContent) {
+
+                    Column(
+                        Modifier.fillMaxWidth(),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        MainScreen(modifier = Modifier)
+                    }
                 }
             }
         }

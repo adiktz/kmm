@@ -11,6 +11,7 @@
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		B550FFB3D7ABBA5A38724794 /* IosGipChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B550FAB7D333883C6B62EA3A /* IosGipChatHelper.swift */; };
 		F437B62B2C4B13D8007B97E5 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F437B6292C4B13D8007B97E5 /* Config.xcconfig */; };
 		F437B62D2C4B2D93007B97E5 /* GipKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F437B62C2C4B2D93007B97E5 /* GipKit.xcframework */; };
 		F437B62E2C4B2D93007B97E5 /* GipKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F437B62C2C4B2D93007B97E5 /* GipKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -37,6 +38,7 @@
 		7555FF7B242A565900829871 /* GipKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GipKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B550FAB7D333883C6B62EA3A /* IosGipChatHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IosGipChatHelper.swift; sourceTree = "<group>"; };
 		F437B6292C4B13D8007B97E5 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		F437B62C2C4B2D93007B97E5 /* GipKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GipKit.xcframework; path = iosApp/GipKit.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +89,7 @@
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
+				B550FAB7D333883C6B62EA3A /* IosGipChatHelper.swift */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				B550FFB3D7ABBA5A38724794 /* IosGipChatHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 2N87VK52YU;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -362,6 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 2N87VK52YU;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
