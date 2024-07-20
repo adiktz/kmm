@@ -22,13 +22,14 @@ import io.gupshup.gipsdkdemo.platform.GipChatHelper
 import org.koin.compose.koinInject
 
 @Composable
-fun MainScreen(modifier: Modifier,
-               gipChatHelper: GipChatHelper = koinInject()
+fun MainScreen(
+    modifier: Modifier,
+    gipChat: GipChatHelper = koinInject()
 ) {
     var appId by remember { mutableStateOf("c5453fbf-95e6-4330-9e14-28a85d3ea6a5") }
     var userName by remember { mutableStateOf("Gaurav") }
     var userId by remember { mutableStateOf("Test-User-Id-1234") }
-    val initialized by remember { mutableStateOf(false) }
+    var initialized by remember { mutableStateOf(false) }
 //    val gipChat = remember { getGipChat() }
     val title = remember { getPlatform().title }
     Column(
@@ -79,14 +80,12 @@ fun MainScreen(modifier: Modifier,
         )
 
         ElevatedButton(onClick = {
-            gipChatHelper.initialize()
-//            gipChat.initialize()
-//            GipChat.setAppId(appId)
-//            GipChat.setUserName(userName)
-//            GipChat.setUserId(userId)
-//            GipChat.initialize(context) { value ->
-//                initialized = value
-//            }
+            gipChat.setAppId(appId)
+            gipChat.setUserName(userName)
+            gipChat.setUserId(userId)
+            gipChat.initialize { value ->
+                initialized = value
+            }
         }) {
             if (initialized)
                 Text(text = "Re-Initialize")
@@ -95,7 +94,7 @@ fun MainScreen(modifier: Modifier,
 
         Spacer(modifier = Modifier.weight(1f))
         ElevatedButton(
-            onClick = { /*GipChat.show()*/ },
+            onClick = { gipChat.show() },
             enabled = initialized
         ) {
             Text(text = "Start Chat")
