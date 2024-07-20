@@ -1,0 +1,1518 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GipChatDelegate",
+        "printedName": "GipChatDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GipChatException",
+                "printedName": "GipKit.GipChatException",
+                "usr": "s:6GipKit0A13ChatExceptionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6GipKit0A12ChatDelegateP7onError7messageyAA0aC9ExceptionO_tF",
+            "mangledName": "$s6GipKit0A12ChatDelegateP7onError7messageyAA0aC9ExceptionO_tF",
+            "moduleName": "GipKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : GipKit.GipChatDelegate>",
+            "sugared_genericSig": "<Self where Self : GipKit.GipChatDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6GipKit0A12ChatDelegateP",
+        "mangledName": "$s6GipKit0A12ChatDelegateP",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GipChatException",
+        "printedName": "GipChatException",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidAppId",
+            "printedName": "invalidAppId",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GipKit.GipChatException.Type) -> GipKit.GipChatException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GipChatException",
+                    "printedName": "GipKit.GipChatException",
+                    "usr": "s:6GipKit0A13ChatExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GipKit.GipChatException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GipChatException",
+                        "printedName": "GipKit.GipChatException",
+                        "usr": "s:6GipKit0A13ChatExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6GipKit0A13ChatExceptionO12invalidAppIdyA2CmF",
+            "mangledName": "$s6GipKit0A13ChatExceptionO12invalidAppIdyA2CmF",
+            "moduleName": "GipKit"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidToken",
+            "printedName": "invalidToken",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GipKit.GipChatException.Type) -> GipKit.GipChatException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GipChatException",
+                    "printedName": "GipKit.GipChatException",
+                    "usr": "s:6GipKit0A13ChatExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GipKit.GipChatException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GipChatException",
+                        "printedName": "GipKit.GipChatException",
+                        "usr": "s:6GipKit0A13ChatExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6GipKit0A13ChatExceptionO12invalidTokenyA2CmF",
+            "mangledName": "$s6GipKit0A13ChatExceptionO12invalidTokenyA2CmF",
+            "moduleName": "GipKit"
+          },
+          {
+            "kind": "Var",
+            "name": "unInitialized",
+            "printedName": "unInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GipKit.GipChatException.Type) -> GipKit.GipChatException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GipChatException",
+                    "printedName": "GipKit.GipChatException",
+                    "usr": "s:6GipKit0A13ChatExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GipKit.GipChatException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GipChatException",
+                        "printedName": "GipKit.GipChatException",
+                        "usr": "s:6GipKit0A13ChatExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6GipKit0A13ChatExceptionO13unInitializedyA2CmF",
+            "mangledName": "$s6GipKit0A13ChatExceptionO13unInitializedyA2CmF",
+            "moduleName": "GipKit"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidData",
+            "printedName": "invalidData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GipKit.GipChatException.Type) -> GipKit.GipChatException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GipChatException",
+                    "printedName": "GipKit.GipChatException",
+                    "usr": "s:6GipKit0A13ChatExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GipKit.GipChatException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GipChatException",
+                        "printedName": "GipKit.GipChatException",
+                        "usr": "s:6GipKit0A13ChatExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6GipKit0A13ChatExceptionO11invalidDatayA2CmF",
+            "mangledName": "$s6GipKit0A13ChatExceptionO11invalidDatayA2CmF",
+            "moduleName": "GipKit"
+          },
+          {
+            "kind": "Var",
+            "name": "decoderError",
+            "printedName": "decoderError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GipKit.GipChatException.Type) -> GipKit.GipChatException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GipChatException",
+                    "printedName": "GipKit.GipChatException",
+                    "usr": "s:6GipKit0A13ChatExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GipKit.GipChatException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GipChatException",
+                        "printedName": "GipKit.GipChatException",
+                        "usr": "s:6GipKit0A13ChatExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6GipKit0A13ChatExceptionO12decoderErroryA2CmF",
+            "mangledName": "$s6GipKit0A13ChatExceptionO12decoderErroryA2CmF",
+            "moduleName": "GipKit"
+          },
+          {
+            "kind": "Var",
+            "name": "networkError",
+            "printedName": "networkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GipKit.GipChatException.Type) -> GipKit.GipChatException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GipChatException",
+                    "printedName": "GipKit.GipChatException",
+                    "usr": "s:6GipKit0A13ChatExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GipKit.GipChatException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GipChatException",
+                        "printedName": "GipKit.GipChatException",
+                        "usr": "s:6GipKit0A13ChatExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6GipKit0A13ChatExceptionO12networkErroryA2CmF",
+            "mangledName": "$s6GipKit0A13ChatExceptionO12networkErroryA2CmF",
+            "moduleName": "GipKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GipChatException",
+                "printedName": "GipKit.GipChatException",
+                "usr": "s:6GipKit0A13ChatExceptionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GipChatException",
+                "printedName": "GipKit.GipChatException",
+                "usr": "s:6GipKit0A13ChatExceptionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6GipKit0A13ChatExceptionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s6GipKit0A13ChatExceptionO2eeoiySbAC_ACtFZ",
+            "moduleName": "GipKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6GipKit0A13ChatExceptionO9hashValueSivp",
+            "mangledName": "$s6GipKit0A13ChatExceptionO9hashValueSivp",
+            "moduleName": "GipKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6GipKit0A13ChatExceptionO9hashValueSivg",
+                "mangledName": "$s6GipKit0A13ChatExceptionO9hashValueSivg",
+                "moduleName": "GipKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6GipKit0A13ChatExceptionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s6GipKit0A13ChatExceptionO4hash4intoys6HasherVz_tF",
+            "moduleName": "GipKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6GipKit0A13ChatExceptionO11descriptionSSvp",
+            "mangledName": "$s6GipKit0A13ChatExceptionO11descriptionSSvp",
+            "moduleName": "GipKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6GipKit0A13ChatExceptionO11descriptionSSvg",
+                "mangledName": "$s6GipKit0A13ChatExceptionO11descriptionSSvg",
+                "moduleName": "GipKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6GipKit0A13ChatExceptionO16errorDescriptionSSvp",
+            "mangledName": "$s6GipKit0A13ChatExceptionO16errorDescriptionSSvp",
+            "moduleName": "GipKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6GipKit0A13ChatExceptionO16errorDescriptionSSvg",
+                "mangledName": "$s6GipKit0A13ChatExceptionO16errorDescriptionSSvg",
+                "moduleName": "GipKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6GipKit0A13ChatExceptionO",
+        "mangledName": "$s6GipKit0A13ChatExceptionO",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "GipKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GipChat",
+        "printedName": "GipChat",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GipChat",
+                "printedName": "GipKit.GipChat",
+                "usr": "c:@M@GipKit@objc(cs)GipChat"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GipKit@objc(cs)GipChat(cpy)shared",
+            "mangledName": "$s6GipKit0A4ChatC6sharedACvpZ",
+            "moduleName": "GipKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GipChat",
+                    "printedName": "GipKit.GipChat",
+                    "usr": "c:@M@GipKit@objc(cs)GipChat"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GipKit@objc(cs)GipChat(cm)shared",
+                "mangledName": "$s6GipKit0A4ChatC6sharedACvgZ",
+                "moduleName": "GipKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setAppId",
+            "printedName": "setAppId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GipKit@objc(cs)GipChat(im)setAppId:",
+            "mangledName": "$s6GipKit0A4ChatC8setAppIdyySSF",
+            "moduleName": "GipKit",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserName",
+            "printedName": "setUserName(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GipKit@objc(cs)GipChat(im)setUserName:",
+            "mangledName": "$s6GipKit0A4ChatC11setUserNameyySSF",
+            "moduleName": "GipKit",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserId",
+            "printedName": "setUserId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GipKit@objc(cs)GipChat(im)setUserId:",
+            "mangledName": "$s6GipKit0A4ChatC9setUserIdyySSF",
+            "moduleName": "GipKit",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GipChatDelegate",
+                "printedName": "any GipKit.GipChatDelegate",
+                "usr": "s:6GipKit0A12ChatDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6GipKit0A4ChatC11setDelegateyyAA0acE0_pF",
+            "mangledName": "$s6GipKit0A4ChatC11setDelegateyyAA0acE0_pF",
+            "moduleName": "GipKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GipKit@objc(cs)GipChat(im)initialize:",
+            "mangledName": "$s6GipKit0A4ChatC10initializeyyySbcSgF",
+            "moduleName": "GipKit",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GipKit@objc(cs)GipChat(im)show",
+            "mangledName": "$s6GipKit0A4ChatC4showyyF",
+            "moduleName": "GipKit",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "close",
+            "printedName": "close()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GipKit@objc(cs)GipChat(im)close",
+            "mangledName": "$s6GipKit0A4ChatC5closeyyF",
+            "moduleName": "GipKit",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GipKit@objc(cs)GipChat",
+        "mangledName": "$s6GipKit0A4ChatC",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GipKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/View\/FullScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 185,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/View\/FullScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 2291,
+      "length": 24,
+      "value": "\"https:\/\/www.google.com\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/View\/WebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 274,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/View\/WebView.swift",
+      "kind": "StringLiteral",
+      "offset": 1778,
+      "length": 11,
+      "value": "\"GipKit.Coordinator\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkManager.swift",
+      "kind": "Dictionary",
+      "offset": 339,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkManager.swift",
+      "kind": "Dictionary",
+      "offset": 2236,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkManager.swift",
+      "kind": "Dictionary",
+      "offset": 2486,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkManager.swift",
+      "kind": "Dictionary",
+      "offset": 2739,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkManager.swift",
+      "kind": "Dictionary",
+      "offset": 3015,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkManager.swift",
+      "kind": "Dictionary",
+      "offset": 3483,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/GipChatManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 334,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Extension\/UserDefaultsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1478,
+      "length": 12,
+      "value": "\"AESTHETICS\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Extension\/UserDefaultsExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1524,
+      "length": 9,
+      "value": "\"USER_ID\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Utility\/Logger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 728,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Utility\/Logger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1072,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Utility\/Logger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1417,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/View\/FullScreenViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 243,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/View\/FullScreenViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 281,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Utility\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 143,
+      "length": 37,
+      "value": "\"https:\/\/int-web-widget.nsgupshup.in\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Utility\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
+      "length": 23,
+      "value": "\"\/v3\/echat\/mobile.html\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Utility\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 262,
+      "length": 20,
+      "value": "\"&domain=\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Utility\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 281,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Utility\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 310,
+      "length": 44,
+      "value": "\"&timestamp=\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Utility\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 353,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Utility\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 390,
+      "length": 8,
+      "value": "\"gaurav\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Utility\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 427,
+      "length": 16,
+      "value": "\"my-customer-id\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkRequest.swift",
+      "kind": "Dictionary",
+      "offset": 209,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 283,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 330,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 283,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 330,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
+      "kind": "StringLiteral",
+      "offset": 620,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
+      "kind": "StringLiteral",
+      "offset": 671,
+      "length": 10,
+      "value": "\"senderId\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
+      "kind": "StringLiteral",
+      "offset": 727,
+      "length": 11,
+      "value": "\"socketUrl\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
+      "kind": "StringLiteral",
+      "offset": 620,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
+      "kind": "StringLiteral",
+      "offset": 671,
+      "length": 10,
+      "value": "\"senderId\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
+      "kind": "StringLiteral",
+      "offset": 727,
+      "length": 11,
+      "value": "\"socketUrl\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
+      "kind": "StringLiteral",
+      "offset": 1441,
+      "length": 10,
+      "value": "\"RDStatus\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
+      "kind": "StringLiteral",
+      "offset": 1441,
+      "length": 10,
+      "value": "\"RDStatus\""
+    }
+  ]
+}

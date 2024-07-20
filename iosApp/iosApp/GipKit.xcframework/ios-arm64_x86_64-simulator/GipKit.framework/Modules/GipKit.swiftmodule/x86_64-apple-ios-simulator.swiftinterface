@@ -1,0 +1,54 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GipKit
+import AVFoundation
+import Combine
+import Foundation
+@_exported import GipKit
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+
+public protocol GipChatDelegate {
+  func onError(message: GipKit.GipChatException)
+}
+public enum GipChatException : Swift.Error {
+  case invalidAppId
+  case invalidToken
+  case unInitialized
+  case invalidData
+  case decoderError
+  case networkError
+  public static func == (a: GipKit.GipChatException, b: GipKit.GipChatException) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension GipKit.GipChatException : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension GipKit.GipChatException : Foundation.LocalizedError {
+  public var errorDescription: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GipChat : ObjectiveC.NSObject {
+  @objc public static let shared: GipKit.GipChat
+  @objc public func setAppId(_ appId: Swift.String)
+  @objc public func setUserName(_ userName: Swift.String)
+  @objc public func setUserId(_ userId: Swift.String)
+  public func setDelegate(_ delegate: any GipKit.GipChatDelegate)
+  @objc public func initialize(_ initialized: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc public func show()
+  @objc public func close()
+  @objc deinit
+}
+extension GipKit.GipChatException : Swift.Equatable {}
+extension GipKit.GipChatException : Swift.Hashable {}
