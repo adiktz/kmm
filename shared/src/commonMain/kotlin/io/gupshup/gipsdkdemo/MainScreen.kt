@@ -24,12 +24,14 @@ import org.koin.compose.koinInject
 @Composable
 fun MainScreen(
     modifier: Modifier,
+    isGipInitialized: Boolean,
+    setInitialized: (Boolean) -> Unit,
     gipChat: GipChatHelper = koinInject()
 ) {
     var appId by remember { mutableStateOf("c5453fbf-95e6-4330-9e14-28a85d3ea6a5") }
     var userName by remember { mutableStateOf("Gaurav") }
     var userId by remember { mutableStateOf("Test-User-Id-1234") }
-    var initialized by remember { mutableStateOf(false) }
+//    var initialized by remember { mutableStateOf(false) }
 //    val gipChat = remember { getGipChat() }
     val title = remember { getPlatform().title }
     Column(
@@ -84,10 +86,10 @@ fun MainScreen(
             gipChat.setUserName(userName)
             gipChat.setUserId(userId)
             gipChat.initialize { value ->
-                initialized = value
+                setInitialized(value)
             }
         }) {
-            if (initialized)
+            if (isGipInitialized)
                 Text(text = "Re-Initialize")
             else Text(text = "Initialize")
         }
@@ -95,7 +97,7 @@ fun MainScreen(
         Spacer(modifier = Modifier.weight(1f))
         ElevatedButton(
             onClick = { gipChat.show() },
-            enabled = initialized
+            enabled = isGipInitialized
         ) {
             Text(text = "Start Chat")
         }

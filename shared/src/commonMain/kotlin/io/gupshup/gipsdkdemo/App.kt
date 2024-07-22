@@ -1,4 +1,5 @@
 import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -15,6 +16,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.unit.dp
 import gipsdkdemo.shared.generated.resources.Res
 import gipsdkdemo.shared.generated.resources.compose_multiplatform
@@ -31,14 +33,24 @@ fun App() {
     KoinContext {
         MaterialTheme {
             var showContent by remember { mutableStateOf(false) }
-            val state = rememberScrollState()
-            
+
+            var isGipInitialized by remember { mutableStateOf(false) }
+
+            val magicTextAlpha: Float by animateFloatAsState(if (showContent) 1f else 0f)
+            val hideMagicTextAlpha: Float by animateFloatAsState(if (showContent) 0f else 1f)
+
             Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
                 ElevatedButton(
                     modifier = Modifier.padding(20.dp),
                     onClick = { showContent = !showContent }
                 ) {
-                    Text("Click me!")
+                    if (showContent)
+                        Text("Hide The Awesome Content!", modifier = Modifier.alpha(magicTextAlpha))
+                    else
+                        Text(
+                            "Show the awesome content!",
+                            modifier = Modifier.alpha(hideMagicTextAlpha)
+                        )
                 }
                 AnimatedVisibility(!showContent) {
                     DefaultKMMView()
@@ -49,7 +61,13 @@ fun App() {
                         Modifier.fillMaxWidth(),
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
-                        MainScreen(modifier = Modifier)
+                        MainScreen(
+                            modifier = Modifier,
+                            isGipInitialized = isGipInitialized,
+                            setInitialized = {
+                                isGipInitialized = it
+                            }
+                        )
                     }
                 }
             }
@@ -71,7 +89,7 @@ fun DefaultKMMView() {
         )
         Image(
             painterResource(Res.drawable.compose_multiplatform),
-              null
+            null
         )
         Text("Compose: $greeting")
     }
