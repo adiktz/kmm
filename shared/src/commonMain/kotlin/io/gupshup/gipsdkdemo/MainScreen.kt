@@ -8,6 +8,7 @@ import androidx.compose.foundation.text.selection.LocalTextSelectionColors
 import androidx.compose.foundation.text.selection.TextSelectionColors
 import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -19,6 +20,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color.Companion.Transparent
+import androidx.compose.ui.platform.TextToolbar
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import io.gupshup.gipsdkdemo.getPlatform
@@ -39,83 +41,76 @@ fun MainScreen(
 //    val gipChat = remember { getGipChat() }
     val title = remember { getPlatform().title }
 
-    val customTextSelectionColors = TextSelectionColors(
-        handleColor = Transparent,
-        backgroundColor = Transparent,
-    )
 
-    CompositionLocalProvider(
-        LocalTextSelectionColors provides customTextSelectionColors,
+
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            //   .background(Color.Cyan)
+            .padding(16.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Column(
-            modifier = modifier
-                .fillMaxSize()
-                //   .background(Color.Cyan)
-                .padding(16.dp),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
 
-            Text(
-                text = title,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(20.dp),
-                textAlign = TextAlign.Center,
-                style = MaterialTheme.typography.headlineLarge
-            )
+        Text(
+            text = title,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(20.dp),
+            textAlign = TextAlign.Center,
+            style = MaterialTheme.typography.headlineLarge
+        )
 
-            Spacer(modifier = Modifier.weight(0.5f))
-            TextField(
-                value = appId,
-                onValueChange = { appId = it },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(5.dp),
-                singleLine = true,
-                label = { Text("App ID") }
-            )
-            TextField(
-                value = userName,
-                onValueChange = { userName = it },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(5.dp),
-                singleLine = true,
-                label = { Text("User Name") }
-            )
-            TextField(
-                value = userId,
-                onValueChange = { userId = it },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(5.dp),
-                singleLine = true,
-                label = { Text("User ID") }
-            )
+        Spacer(modifier = Modifier.weight(0.5f))
+        OutlinedTextField(
+            value = appId,
+            onValueChange = { appId = it },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(5.dp),
+            singleLine = true,
+            label = { Text("App ID") }
+        )
+        OutlinedTextField(
+            value = userName,
+            onValueChange = { userName = it },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(5.dp),
+            singleLine = true,
+            label = { Text("User Name") }
+        )
+        OutlinedTextField(
+            value = userId,
+            onValueChange = { userId = it },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(5.dp),
+            singleLine = true,
+            label = { Text("User ID") }
+        )
 
-            ElevatedButton(onClick = {
-                gipChat.setAppId(appId)
-                gipChat.setUserName(userName)
-                gipChat.setUserId(userId)
-                gipChat.initialize { value ->
-                    setInitialized(value)
-                }
-            }) {
-                if (isGipInitialized)
-                    Text(text = "Re-Initialize")
-                else Text(text = "Initialize")
+        ElevatedButton(onClick = {
+            gipChat.setAppId(appId)
+            gipChat.setUserName(userName)
+            gipChat.setUserId(userId)
+            gipChat.initialize { value ->
+                setInitialized(value)
             }
-
-            Spacer(modifier = Modifier.weight(1f))
-            ElevatedButton(
-                onClick = { gipChat.show() },
-                enabled = isGipInitialized
-            ) {
-                Text(text = "Start Chat")
-            }
-
-            Spacer(modifier = Modifier.weight(0.3f))
+        }) {
+            if (isGipInitialized)
+                Text(text = "Re-Initialize")
+            else Text(text = "Initialize")
         }
+
+        Spacer(modifier = Modifier.weight(1f))
+        ElevatedButton(
+            onClick = { gipChat.show() },
+            enabled = isGipInitialized
+        ) {
+            Text(text = "Start Chat")
+        }
+
+        Spacer(modifier = Modifier.weight(0.3f))
     }
 }

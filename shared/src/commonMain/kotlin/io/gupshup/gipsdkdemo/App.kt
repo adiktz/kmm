@@ -54,7 +54,7 @@ fun App() {
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     ElevatedButton(
-                        modifier = Modifier.padding(20.dp),
+                        modifier = Modifier.padding(30.dp),
                         onClick = { showContent = !showContent }
                     ) {
                         if (showContent)
