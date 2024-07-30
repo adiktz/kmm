@@ -39,11 +39,11 @@ extension GipKit.GipChatException : Foundation.LocalizedError {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GipChat : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GipChat : ObjectiveC.NSObject {
   @objc public static let shared: GipKit.GipChat
   @objc public func setAppId(_ appId: Swift.String)
-  @objc public func setUserName(_ userName: Swift.String)
-  @objc public func setUserId(_ userId: Swift.String)
+  @objc public func setUserName(_ userName: Swift.String?)
+  @objc public func setUserId(_ userId: Swift.String?)
   public func setDelegate(_ delegate: any GipKit.GipChatDelegate)
   @objc public func initialize(_ initialized: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc public func show()

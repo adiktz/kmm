@@ -2,6 +2,7 @@ package io.gupshup.gipsdkdemo.platform
 
 import android.content.Context
 import io.gupshup.gipchat.GipChat
+import io.gupshup.gipchat.listener.GipChatListener
 import io.gupshup.gipsdkdemo.getPlatform
 
 class AndroidGipChatHelper(private val context: Context): GipChatHelper {
@@ -11,11 +12,11 @@ class AndroidGipChatHelper(private val context: Context): GipChatHelper {
         gipChat.setAppId(appId)
     }
 
-    override fun setUserName(userName: String) {
+    override fun setUserName(userName: String?) {
         gipChat.setUserName(userName)
     }
 
-    override fun setUserId(userId: String) {
+    override fun setUserId(userId: String?) {
         gipChat.setUserId(userId)
     }
 
@@ -27,5 +28,15 @@ class AndroidGipChatHelper(private val context: Context): GipChatHelper {
         gipChat.show()
     }
 
+    override fun onError(message: (String) -> Unit) {
+        gipChat.setListener(listener = object : GipChatListener {
+            override fun onError(exception: Exception) {
+                message(exception.message ?: "Error occurred..")
+            }
 
+            override fun onInitialized() {
+                println("Initialized")
+            }
+        })
+    }
 }

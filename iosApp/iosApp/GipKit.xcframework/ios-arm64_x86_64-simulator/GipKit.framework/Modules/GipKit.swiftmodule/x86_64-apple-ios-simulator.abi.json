@@ -987,14 +987,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GipKit@objc(cs)GipChat(im)setUserName:",
-            "mangledName": "$s6GipKit0A4ChatC11setUserNameyySSF",
+            "mangledName": "$s6GipKit0A4ChatC11setUserNameyySSSgF",
             "moduleName": "GipKit",
             "declAttributes": [
               "AccessControl",
@@ -1014,14 +1022,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GipKit@objc(cs)GipChat(im)setUserId:",
-            "mangledName": "$s6GipKit0A4ChatC9setUserIdyySSF",
+            "mangledName": "$s6GipKit0A4ChatC9setUserIdyySSSgF",
             "moduleName": "GipKit",
             "declAttributes": [
               "AccessControl",
@@ -1051,7 +1067,8 @@
             "mangledName": "$s6GipKit0A4ChatC11setDelegateyyAA0acE0_pF",
             "moduleName": "GipKit",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1152,7 +1169,6 @@
         "moduleName": "GipKit",
         "declAttributes": [
           "AccessControl",
-          "ObjCMembers",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -1237,7 +1253,7 @@
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/View\/FullScreen.swift",
       "kind": "StringLiteral",
-      "offset": 2291,
+      "offset": 2724,
       "length": 24,
       "value": "\"https:\/\/www.google.com\""
     },
@@ -1251,7 +1267,7 @@
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/View\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 1778,
+      "offset": 1859,
       "length": 11,
       "value": "\"GipKit.Coordinator\""
     },
@@ -1342,16 +1358,9 @@
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/View\/FullScreenViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 243,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/View\/FullScreenViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 281,
-      "length": 2,
-      "value": "\"\""
+      "offset": 532,
+      "length": 59,
+      "value": "\"https:\/\/gs-upload.gupshup.io\/gip\/avatars\/bot-avatar-5.svg\""
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Utility\/Constants.swift",
@@ -1460,59 +1469,73 @@
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 415,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
       "kind": "StringLiteral",
-      "offset": 620,
+      "offset": 627,
       "length": 7,
       "value": "\"appId\""
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
       "kind": "StringLiteral",
-      "offset": 671,
+      "offset": 678,
       "length": 10,
       "value": "\"senderId\""
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
       "kind": "StringLiteral",
-      "offset": 727,
+      "offset": 734,
       "length": 11,
       "value": "\"socketUrl\""
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
       "kind": "StringLiteral",
-      "offset": 620,
+      "offset": 627,
       "length": 7,
       "value": "\"appId\""
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
       "kind": "StringLiteral",
-      "offset": 671,
+      "offset": 678,
       "length": 10,
       "value": "\"senderId\""
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
       "kind": "StringLiteral",
-      "offset": 727,
+      "offset": 734,
       "length": 11,
       "value": "\"socketUrl\""
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
       "kind": "StringLiteral",
-      "offset": 1441,
+      "offset": 1448,
       "length": 10,
       "value": "\"RDStatus\""
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
       "kind": "StringLiteral",
-      "offset": 1441,
+      "offset": 1448,
       "length": 10,
       "value": "\"RDStatus\""
+    },
+    {
+      "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Model\/AppData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2148,
+      "length": 5,
+      "value": "false"
     }
   ]
 }

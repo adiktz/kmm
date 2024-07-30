@@ -5,14 +5,14 @@ import io.gupshup.gipsdkdemo.di.initKoinAndroid
 import io.gupshup.gipsdkdemo.platform.AndroidApplicationComponent
 import org.koin.android.ext.koin.androidContext
 
-class App: Application() {
+class MyApp: Application() {
 
     override fun onCreate() {
         super.onCreate()
         initKoinAndroid(
             appComponent = AndroidApplicationComponent()
         ) {
-            androidContext(this@App)
+            androidContext(this@MyApp)
         }
     }
     

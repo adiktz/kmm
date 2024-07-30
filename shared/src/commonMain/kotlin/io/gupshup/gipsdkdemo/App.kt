@@ -1,3 +1,6 @@
+package io.gupshup.gipsdkdemo
+
+import MainScreen
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.Image
@@ -5,10 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.safeContentPadding
 import androidx.compose.foundation.layout.systemBarsPadding
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.material3.Button
 import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -24,13 +24,10 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.unit.dp
 import gipsdkdemo.shared.generated.resources.Res
 import gipsdkdemo.shared.generated.resources.compose_multiplatform
-import io.gupshup.gipsdkdemo.Greeting
-import io.gupshup.gipsdkdemo.platform.GipChatHelper
 import io.gupshup.gipsdkdemo.ui.theme.SharedTheme
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.koin.compose.KoinContext
-import org.koin.compose.koinInject
 
 @Composable
 @Preview
@@ -41,7 +38,7 @@ fun App() {
                 modifier = Modifier.fillMaxSize(),
                 color = MaterialTheme.colorScheme.background
             ) {
-                var showContent by remember { mutableStateOf(false) }
+                val showContent by remember { mutableStateOf(true) }
 
                 var isGipInitialized by remember { mutableStateOf(false) }
 
@@ -53,7 +50,7 @@ fun App() {
                         .systemBarsPadding(),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    ElevatedButton(
+                    /*ElevatedButton(
                         modifier = Modifier.padding(30.dp),
                         onClick = { showContent = !showContent }
                     ) {
@@ -67,10 +64,10 @@ fun App() {
                                 "Show the awesome content!".uppercase(),
                                 modifier = Modifier.alpha(hideMagicTextAlpha)
                             )
-                    }
-                    AnimatedVisibility(!showContent) {
+                    }*/
+                    /*AnimatedVisibility(!showContent) {
                         DefaultKMMView()
-                    }
+                    }*/
                     AnimatedVisibility(showContent) {
 
                         Column(
