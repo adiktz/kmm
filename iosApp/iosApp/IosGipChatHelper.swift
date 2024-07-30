@@ -6,9 +6,7 @@ class IosGipChatHelper: GipChatHelper {
 
     let gipChat = GipChat.shared
     
-    let delegate = Delegate { message in
-    //    print(message)
-    }
+    let delegate = Delegate()
     
     init() {
         gipChat.setDelegate(delegate)
@@ -41,11 +39,7 @@ class IosGipChatHelper: GipChatHelper {
     }
     
     class Delegate: GipChatDelegate {
-        var errorMessage: (String) -> Void
-        
-        init(errorMessage: @escaping (String) -> Void) {
-            self.errorMessage = errorMessage
-        }
+        var errorMessage: (String) -> Void = { message in }
         
         func onError(message: String) {
             errorMessage(message)
