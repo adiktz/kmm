@@ -262,7 +262,7 @@ fun SharedTheme(
 
     MaterialTheme(
         colorScheme = colors,
-   //     typography = AppTypography,
+        typography = NunitoTypography(),
         content = content
     )
 }
