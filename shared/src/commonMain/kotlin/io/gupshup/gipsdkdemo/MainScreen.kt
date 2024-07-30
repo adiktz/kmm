@@ -106,12 +106,15 @@ fun MainScreen(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(10.dp),
-            horizontalArrangement = Arrangement.spacedBy(20.dp, alignment = Alignment.CenterHorizontally),
+            horizontalArrangement = Arrangement.spacedBy(
+                20.dp,
+                alignment = Alignment.CenterHorizontally
+            ),
             verticalAlignment = Alignment.CenterVertically
         ) {
             ElevatedButton(
                 onClick = {
-                    focusRequester.captureFocus()
+                    focusManager.clearFocus()
                     initializeGipSdk(
                         gipChat = gipChat,
                         appId = appId,
@@ -148,7 +151,10 @@ fun MainScreen(
 
         Spacer(modifier = Modifier.weight(1f))
         ElevatedButton(
-            onClick = { gipChat.show() },
+            onClick = {
+                focusManager.clearFocus()
+                gipChat.show()
+            },
             enabled = isGipInitialized
         ) {
             Text(text = "Start Chat".uppercase())

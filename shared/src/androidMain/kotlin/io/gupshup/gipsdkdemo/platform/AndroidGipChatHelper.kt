@@ -3,9 +3,7 @@ package io.gupshup.gipsdkdemo.platform
 import android.content.Context
 import io.gupshup.gipchat.GipChat
 import io.gupshup.gipchat.listener.GipChatListener
-import io.gupshup.gipsdkdemo.getPlatform
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.jsonObject
 
 class AndroidGipChatHelper(private val context: Context): GipChatHelper {

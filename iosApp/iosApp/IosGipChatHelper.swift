@@ -47,8 +47,8 @@ class IosGipChatHelper: GipChatHelper {
             self.errorMessage = errorMessage
         }
         
-        func onError(message: GipChatException) {
-            errorMessage(message.description)
+        func onError(message: String) {
+            errorMessage(message)
         }
     }
 }

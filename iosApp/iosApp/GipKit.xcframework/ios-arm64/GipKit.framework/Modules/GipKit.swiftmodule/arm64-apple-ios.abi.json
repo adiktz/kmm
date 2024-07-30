@@ -139,14 +139,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GipChatException",
-                "printedName": "GipKit.GipChatException",
-                "usr": "s:6GipKit0A13ChatExceptionO"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6GipKit0A12ChatDelegateP7onError7messageyAA0aC9ExceptionO_tF",
-            "mangledName": "$s6GipKit0A12ChatDelegateP7onError7messageyAA0aC9ExceptionO_tF",
+            "usr": "s:6GipKit0A12ChatDelegateP7onError7messageySS_tF",
+            "mangledName": "$s6GipKit0A12ChatDelegateP7onError7messageySS_tF",
             "moduleName": "GipKit",
             "genericSig": "<τ_0_0 where τ_0_0 : GipKit.GipChatDelegate>",
             "sugared_genericSig": "<Self where Self : GipKit.GipChatDelegate>",
@@ -1281,35 +1281,35 @@
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkManager.swift",
       "kind": "Dictionary",
-      "offset": 2236,
+      "offset": 2685,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkManager.swift",
       "kind": "Dictionary",
-      "offset": 2486,
+      "offset": 2935,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkManager.swift",
       "kind": "Dictionary",
-      "offset": 2739,
+      "offset": 3188,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkManager.swift",
       "kind": "Dictionary",
-      "offset": 3015,
+      "offset": 3464,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gaurav\/Work\/projects\/gip\/iOS\/gipkit\/GipKit\/GipKit\/Api\/NetworkManager.swift",
       "kind": "Dictionary",
-      "offset": 3483,
+      "offset": 3932,
       "length": 3,
       "value": "[]"
     },

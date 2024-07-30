@@ -14,7 +14,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 
 public protocol GipChatDelegate {
-  func onError(message: GipKit.GipChatException)
+  func onError(message: Swift.String)
 }
 public enum GipChatException : Swift.Error {
   case invalidAppId
