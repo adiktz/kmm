@@ -4,10 +4,18 @@ import android.content.Context
 import io.gupshup.gipchat.GipChat
 import io.gupshup.gipchat.listener.GipChatListener
 import io.gupshup.gipsdkdemo.getPlatform
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonObject
+import kotlinx.serialization.json.jsonObject
 
 class AndroidGipChatHelper(private val context: Context): GipChatHelper {
 
     private val gipChat = GipChat
+    private val listener = Listener()
+
+    init {
+        gipChat.setListener(listener = listener)
+    }
     override fun setAppId(appId: String) {
         gipChat.setAppId(appId)
     }
@@ -29,14 +37,24 @@ class AndroidGipChatHelper(private val context: Context): GipChatHelper {
     }
 
     override fun onError(message: (String) -> Unit) {
-        gipChat.setListener(listener = object : GipChatListener {
-            override fun onError(exception: Exception) {
-                message(exception.message ?: "Error occurred..")
-            }
+        listener.message = message
+    }
 
-            override fun onInitialized() {
-                println("Initialized")
+    inner class Listener: GipChatListener {
+        var message: (String) -> Unit = {}
+        override fun onError(exception: Exception) {
+            exception.message?.let {
+                val json = Json.parseToJsonElement(it).jsonObject
+                if (json["message"] != null) {
+                    message(json["message"].toString().replace("\"", ""))
+                    return
+                }
             }
-        })
+            message(exception.message ?: "Error occurred..")
+        }
+        override fun onInitialized() {
+            println("Initialized")
+        }
+
     }
 }

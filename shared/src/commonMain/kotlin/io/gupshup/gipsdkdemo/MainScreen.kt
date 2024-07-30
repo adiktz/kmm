@@ -23,6 +23,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import io.gupshup.gipsdkdemo.getPlatform
 import io.gupshup.gipsdkdemo.platform.GipChatHelper
+import kotlinx.coroutines.channels.Channel
 import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.koin.compose.koinInject
 
@@ -30,6 +31,7 @@ import org.koin.compose.koinInject
 @Composable
 fun MainScreen(
     modifier: Modifier,
+    channel: Channel<String>,
     isGipInitialized: Boolean,
     setInitialized: (Boolean) -> Unit,
     gipChat: GipChatHelper = koinInject()
@@ -40,13 +42,11 @@ fun MainScreen(
 
     val title = remember { getPlatform().title }
 
-    var error by remember {
-        mutableStateOf<String?>(null)
-    }
 
     val listener: (String) -> Unit = {
-        println(it)
+        channel.trySend(it)
     }
+    gipChat.onError(listener)
 
     val focusRequester = remember { FocusRequester() }
     val focusManager = LocalFocusManager.current
@@ -119,8 +119,7 @@ fun MainScreen(
                         userId = userId,
                         onInitialized = {
                             setInitialized(it)
-                        },
-                        listener = listener
+                        }
                     )
                 },
                 enabled = userName.isNotEmpty() && userId.isNotEmpty()
@@ -140,8 +139,7 @@ fun MainScreen(
                     userId = null,
                     onInitialized = {
                         setInitialized(it)
-                    },
-                    listener = listener
+                    }
                 )
             }) {
                 Text(text = "Anonymous".uppercase())
@@ -165,15 +163,13 @@ internal fun initializeGipSdk(
     appId: String,
     userName: String? = null,
     userId: String? = null,
-    onInitialized: ((Boolean) -> Unit)? = null,
-    listener: ((String) -> Unit)? = null
+    onInitialized: ((Boolean) -> Unit)? = null
 ) {
-
+    onInitialized?.invoke(false)
     gipChat.setAppId(appId)
     gipChat.setUserName(userName)
     gipChat.setUserId(userId)
     gipChat.initialize { value ->
         onInitialized?.invoke(value)
     }
-    gipChat.onError { listener?.invoke(it) }
 }

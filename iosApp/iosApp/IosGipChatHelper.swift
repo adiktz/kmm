@@ -7,7 +7,11 @@ class IosGipChatHelper: GipChatHelper {
     let gipChat = GipChat.shared
     
     let delegate = Delegate { message in
-        print(message)
+    //    print(message)
+    }
+    
+    init() {
+        gipChat.setDelegate(delegate)
     }
 
     func setAppId(appId: String) {
@@ -33,8 +37,7 @@ class IosGipChatHelper: GipChatHelper {
     }
 
     func onError(message: @escaping (String) -> Void) {
-        print("In OnError...")
-        gipChat.setDelegate(delegate)
+        delegate.errorMessage = message
     }
     
     class Delegate: GipChatDelegate {
@@ -45,7 +48,6 @@ class IosGipChatHelper: GipChatHelper {
         }
         
         func onError(message: GipChatException) {
-            print("Delegate called...")
             errorMessage(message.description)
         }
     }

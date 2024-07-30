@@ -24,6 +24,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Take picture and upload</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Record and upload video for the chat bot.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
